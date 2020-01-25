@@ -1,7 +1,7 @@
 %global pypi_name pulsectl
 
 Name:           python-%{pypi_name}
-Version:        19.10.4
+Version:        20.1.2
 Release:        1%{?dist}
 Summary:        Python high-level interface and ctypes-based bindings for PulseAudio
 
@@ -50,6 +50,10 @@ samples to play, player-like client).
 
 
 %changelog
+* Sat Jan 25 2020 Paul W. Frields <stickster@gmail.com> - 20.1.2-1
+- Update to latest upstream 20.1.2
+- Testing packit
+
 * Sat Nov  9 2019 Paul W. Frields <stickster@gmail.com> - 19.10.4-1
 - Update to latest upstream 19.10.4 (#1759622)
 
