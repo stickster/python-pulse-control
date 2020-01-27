@@ -3,7 +3,7 @@
 # docs: https://github.com/packit-service/packit/blob/master/docs/configuration.md
 specfile_path: python-pulsectl.spec
 
-upstream_package_name: python-pulse-control
+upstream_package_name: pulsectl
 downstream_package_name: python-pulsectl
 # Upstream currently set to fork
 upstream_project_url: https://github.com/stickster/python-pulse-control
