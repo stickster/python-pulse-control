@@ -3,13 +3,17 @@
 # docs: https://github.com/packit-service/packit/blob/master/docs/configuration.md
 specfile_path: python-pulsectl.spec
 
-upstream_package_name: python-pulse-control
+upstream_package_name: pulsectl
 downstream_package_name: python-pulsectl
 # Upstream currently set to fork
 upstream_project_url: https://github.com/stickster/python-pulse-control
 
-create_tarball_command: ["python3", "setup.py", "sdist", "--dist-dir", "."]
-current_version_command: ["python3", "setup.py", "--version"]
+actions:
+  create-archive:
+  - "python3 setup.py sdist --dist-dir ."
+  - "sh -c 'echo pulsectl-$(python3 setup.py --version).tar.gz'"
+  get-current-version:
+  - "python3 setup.py --version"
 
 jobs:
 - job: sync_from_downstream
